@@ -12,19 +12,19 @@ jupyterlab>=3.6
 # YOLOv5 / Computer Vision Base
 gitpython>=3.1.30
 matplotlib>=3.3
-numpy>=1.21
+numpy>=1.23.5
 opencv-python>=4.5
-Pillow>=8.0
+Pillow>=10.3.0
 psutil
 PyYAML>=5.3.1
-requests>=2.23.0
+requests>=2.32.2
 scipy>=1.7
-tqdm>=4.64.0
+tqdm>=4.66.3
 
-# Deep Learning
-torch>=1.10
-torchvision>=0.11
-ultralytics>=8.0.111
+# Deep Learning (CPU versions for Windows)
+torch==1.13.1+cpu
+torchvision==0.14.1+cpu
+ultralytics>=8.2.64
 thop>=0.1.1
 
 # Logging & Visualization
@@ -36,4 +36,8 @@ seaborn>=0.11
 ipython
 
 # Build tools
-setuptools>=65.5.1
+setuptools>=70.0.0
+packaging
+
+# Extras
+urllib3>=2.5.0 ; python_version > "3.8"
